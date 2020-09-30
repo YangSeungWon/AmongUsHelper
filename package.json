@@ -1,0 +1,23 @@
+{
+  "name": "among_us_helper",
+  "version": "1.0.0",
+  "description": "discord_bot_for_among_us",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "YangSeungWon",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^12.3.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YangSeungWon/AmongUsHelper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YangSeungWon/AmongUsHelper/issues"
+  },
+  "homepage": "https://github.com/YangSeungWon/AmongUsHelper#readme"
+}
