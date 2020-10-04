@@ -4,7 +4,7 @@ const config = require("./config.json");
 
 
 let voiceChannel;
-let isGameing = false;
+let isGaming = false;
 let isMeeting = false;
 let time = 135;
 let dead_members = Array();
