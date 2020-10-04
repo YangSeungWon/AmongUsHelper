@@ -4,6 +4,7 @@ const config = require("./config.json");
 
 
 let voiceChannel;
+let isGameing = false;
 let isMeeting = false;
 let time = 135;
 let dead_members = Array();
@@ -37,16 +38,31 @@ client.on('message', msg => {
                 msg.channel.send("\nhttps://tenor.com/view/among-us-digibyte-dgb-meme-button-gif-18569623");
             }
         } else if (content === "start") {
-            dead_members.length = 0;
-            msg.channel.send("\n게임 시작");
-            msg.channel.send("\nhttps://tenor.com/view/among-us-discord-gif-18555996");
-            muteAll().then(console.log);
+            if (isGaming) {
+                msg.reply("\n이미 게임 중입니다.");
+            } else {
+                isGaming = true;
+                dead_members.length = 0;
+                msg.channel.send("\n게임 시작");
+                msg.channel.send("\nhttps://tenor.com/view/among-us-discord-gif-18555996");
+                muteAll().then(console.log);
+            }
         } else if (content === "end") {
-            dead_members.length = 0;
-            msg.channel.send("\n게임 끝");
-            msg.channel.send("\nhttps://tenor.com/view/among-us-among-us-victory-just-some-plastic-gif-18613647");
-            unMuteAll().then(console.log);
+            if (!isGaming) {
+                msg.reply("\n게임 중이 아닙니다.");
+            } else {
+                isGaming = false;
+                dead_members.length = 0;
+                msg.channel.send("\n게임 끝");
+                msg.channel.send("\nhttps://tenor.com/view/among-us-among-us-victory-just-some-plastic-gif-18613647");
+                unMuteAll().then(console.log);
+            }
         } else if (content === "status") {
+            if (isGaming) {
+                msg.reply("\n게임 중입니다.");
+            } else {
+                msg.reply("\n게임 중이 아닙니다.");
+            }
             if (isMeeting) {
                 msg.reply("\n회의 중입니다.");
             } else {
