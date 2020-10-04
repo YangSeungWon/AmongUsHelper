@@ -30,16 +30,21 @@ client.on('message', msg => {
                 let timer = setTimeout(() => {
                     isMeeting = false;
                     muteAll().then(console.log);
-                    msg.channel.send("\n회의가 끝났습니다. (모두 음소거)")
+                    msg.channel.send("\n회의가 끝났습니다. (모두 음소거)");
+                    msg.channel.send("\nhttps://tenor.com/view/among-us-gif-18540350");
                 }, time*1000);
                 msg.channel.send("\n회의를 시작했습니다.(음소거 해제) "+time+"초 후에 종료됩니다.");
+                msg.channel.send("\nhttps://tenor.com/view/among-us-digibyte-dgb-meme-button-gif-18569623");
             }
         } else if (content === "start") {
+            dead_members.length = 0;
             msg.channel.send("\n게임 시작");
+            msg.channel.send("\nhttps://tenor.com/view/among-us-discord-gif-18555996");
             muteAll().then(console.log);
         } else if (content === "end") {
             dead_members.length = 0;
             msg.channel.send("\n게임 끝");
+            msg.channel.send("\nhttps://tenor.com/view/among-us-among-us-victory-just-some-plastic-gif-18613647");
             unMuteAll().then(console.log);
         } else if (content === "status") {
             if (isMeeting) {
@@ -57,7 +62,7 @@ client.on('message', msg => {
         } else if (content === "dead") {
             dead_members.push(msg.author.id);
             msg.member.voice.setMute(true);
-            msg.reply("\nZzz....");
+            msg.reply("\nhttps://tenor.com/view/among-us-gif-18355819");
         }
     }
 });
