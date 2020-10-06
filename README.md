@@ -2,18 +2,8 @@
 Discord bot for Among Us.
 
 ## Getting Started
-```
-git clone https://github.com/YangSeungWon/AmongUsHelper.git
-cd AmongUsHelper
-npm install
-```
-Then you can start AmongUsHelper using `node index.js`(Don't forget to configure!).
-
-## Configuration
-1. Follow [Discord Bot Token Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
-2. Then copy your bot's TOKEN, and paste it to `config.json`(You can see `HERE!!!` in that file).
-3. Follow [Discord Bot Add Guide](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
-    **You have to add `Send Messages` in TEXT PERMISSIONS, and `Mute Members` in VOICE PERMISSIONS.**
+If you just want to add this bot to your server,
+Please visit https://bots.ondiscord.xyz/bots/760535068824436769
 
 ## Commands
 * **!help**
@@ -41,3 +31,18 @@ After installation and configuration, including `node index.js`,
 4. When you are killed by imposter, type `!dead`. But after next meeting starts!(because you should not inform others that you're dead.)
 5. When you meeting starts, type `!meet`.
 6. When the game ends, type `!end`.
+
+## Getting Started for developer
+```
+git clone https://github.com/YangSeungWon/AmongUsHelper.git
+cd AmongUsHelper
+npm install
+```
+Then you can start AmongUsHelper using `node index.js`(Don't forget to configure!).
+
+## Configuration for developer
+1. Follow [Discord Bot Token Guide](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot).
+2. Then copy your bot's TOKEN, and paste it to `config.json`(You can see `HERE!!!` in that file).
+3. Follow [Discord Bot Add Guide](https://discordjs.guide/preparations/adding-your-bot-to-servers.html#bot-invite-links).
+    **You have to add `Send Messages` in TEXT PERMISSIONS, and `Mute Members` in VOICE PERMISSIONS.**
+
