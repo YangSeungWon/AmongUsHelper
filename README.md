@@ -3,7 +3,7 @@ Discord bot for Among Us.
 
 ## Getting Started
 If you just want to add this bot to your server,
-Please visit https://bots.ondiscord.xyz/bots/760535068824436769
+Please visit https://top.gg/bot/760535068824436769 or https://bots.ondiscord.xyz/bots/760535068824436769 .
 
 ## Commands
 * **!help**
