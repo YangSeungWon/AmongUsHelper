@@ -74,8 +74,10 @@ class Channel {
                 return reject("\nThe game has not started yet.");
 
             this.isGaming = false;
+            this.isMeeting = false;
             this.dead_members.length = 0;
             this.unMuteAll();
+            clearTimeout(this.timer);
             return resolve("\nThe game ended."
                     +"\nhttps://tenor.com/view/among-us-among-us-victory-just-some-plastic-gif-18613647");
         });
