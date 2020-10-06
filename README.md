@@ -22,7 +22,7 @@ Start game. SHHHHHHH!
 *Please type this when the game ends.* It unmutes every person.
 
 ## Common Usage
-After installation and configuration, including `node index.js`,
+After adding this bot to your server,
 1. Join a voice channel with your friends.
 2. Using `!config N`, set conversation time as same as your game setting.
 3. When you start game, type `!start`.
