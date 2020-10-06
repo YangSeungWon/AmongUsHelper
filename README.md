@@ -8,8 +8,6 @@ Please visit https://bots.ondiscord.xyz/bots/760535068824436769
 ## Commands
 * **!help**
 Print available commands.
-* **!init**
-The voice channel which message sender is joining becomes the target of this bot.
 * **!config N**
 Set conversation time(which includes voting time) to N seconds. default is 135sec.
 * **!status**
@@ -25,7 +23,7 @@ Start game. SHHHHHHH!
 
 ## Common Usage
 After installation and configuration, including `node index.js`,
-1. Join a voice channel, and type `!init` in any channel.
+1. Join a voice channel with your friends.
 2. Using `!config N`, set conversation time as same as your game setting.
 3. When you start game, type `!start`.
 4. When you are killed by imposter, type `!dead`. But after next meeting starts!(because you should not inform others that you're dead.)
